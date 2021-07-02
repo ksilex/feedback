@@ -1,0 +1,2 @@
+document.getElementById('results').innerHTML = `<%=j render @feedbacks %>`
+document.getElementsByClassName('pagination-centered')[0].innerHTML = `<%=paginate @feedbacks, remote: true%>`

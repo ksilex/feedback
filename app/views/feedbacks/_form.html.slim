@@ -1,0 +1,8 @@
+= form_with model: @feedback do |f|
+    = f.label :name
+    = f.text_field :name, required: true, value: current_user&.full_name
+    = f.label :email
+    = f.email_field :email, required: true, value: current_user&.email
+    = f.label :text
+    = f.text_field :text, required: true
+    = f.submit

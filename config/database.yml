@@ -1,5 +1,8 @@
 defaults: &defaults
   adapter: postgresql
+  username: feedback
+  password: <%= Rails.application.credentials.dig(:db_pass) %>
+  host: localhost
   encoding: unicode
   min_messages: warning
   timeout: 5000
