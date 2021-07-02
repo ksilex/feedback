@@ -12,12 +12,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       # Rememberable
       t.datetime :remember_created_at
 
-      # Confirmable
-      t.string   :confirmation_token
-      t.datetime :confirmed_at
-      t.datetime :confirmation_sent_at
-      t.string   :unconfirmed_email # Only if using reconfirmable
-
       # Trackable
       t.integer  :sign_in_count, default: 0
       t.datetime :current_sign_in_at
