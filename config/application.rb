@@ -30,11 +30,5 @@ module RailsBase
 
     # Enable deflate / gzip compression of controller-generated responses
     config.middleware.use Rack::Deflater
-
-    # Set URL options to be able to use url_for helpers
-    config.action_mailer.default_url_options = { host: ENV.fetch("HOST") }
-
-    # Add HOST to allowed list
-    config.hosts << ENV.fetch("HOST")
   end
 end
